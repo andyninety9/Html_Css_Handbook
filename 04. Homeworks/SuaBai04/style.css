@@ -1,0 +1,188 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eee;
+    padding-top: 6rem;
+}
+
+.register_form {
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.register_form-left {
+    width: 50%;
+}
+.register_form-right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+img:hover {
+    scale: 1.2;
+    transition: all;
+    cursor: pointer;
+}
+
+.register_form {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 2rem;
+    padding: 4rem;
+}
+
+.register_header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(40, 23, 101);
+    margin-bottom: 2rem;
+}
+
+.header-desc {
+    font-weight: 700;
+    font-size: 11px;
+    color: rgb(233, 93, 98);
+    display: inline-block;
+}
+
+.header-line {
+    height: 2.2px;
+    width: 4rem;
+    background-color: rgb(233, 93, 98);
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.body-socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.social-google,
+.social-facebook {
+    height: 4rem;
+    width: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 12px;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+
+.social-google:hover {
+    background-color: blue;
+    color: white;
+}
+.social-facebook:hover {
+    background-color: blue;
+    color: white;
+}
+
+.body-info {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.wrapper-name,
+.wrapper-emal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info-name,
+.info-email {
+    height: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    padding: 1rem;
+    font-size: 13px;
+}
+
+.label-email,
+.label-name,
+.label-password {
+    margin-left: 1rem;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.info-password {
+    height: 4rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    font-size: 13px;
+}
+
+.wrapper-checkbox {
+    width: 100%;
+    font-size: 12px;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.info-checkbox {
+    height: 2rem;
+    width: 2rem;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.submit-button {
+    height: 5rem;
+    width: 5rem;
+    background-color: rgb(251, 76, 83);
+    border-radius: 1rem;
+    box-shadow: 0px 7px 20px 2px rgba(251, 76, 83, 0.5);
+}
+
+.fa-arrow-right {
+    color: white;
+}
+
+.register_footer {
+    margin-top: 5rem;
+    font-size: 13px;
+}
+
+.signin {
+    color: rgb(251, 76, 83);
+}

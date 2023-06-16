@@ -1,0 +1,56 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#subcribe {
+    background-color: #0089e3;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-image: url(https://images.unsplash.com/photo-1682687220363-35e4621ed990?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.subcribe_header-title {
+    color: white;
+    line-height: 1.2;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.subcribe_header-desc {
+    color: white;
+    line-height: 1.4;
+    padding-bottom: 20px;
+    opacity: 0.8;
+    font-weight: lighter;
+}
+.subscribe_footer-email {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: 300;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+}
+.subscribe_footer-btn {
+    background-color: #30373b;
+    color: white;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+}
+.subscribe_footer-btn:hover {
+    background-color: grey;
+}

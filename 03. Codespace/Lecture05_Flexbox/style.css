@@ -1,0 +1,111 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    position: relative;
+}
+
+.signup {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    gap: 2rem;
+    padding: 5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signup_left,
+.signup_right {
+    width: 50%;
+    height: 100%;
+}
+
+.image-right {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.signup-header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.header-title {
+    font-size: 6rem;
+    font-weight: 700;
+    color: rgb(39, 25, 105);
+    margin-bottom: 3rem;
+}
+
+.header-subTitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(219, 91, 94);
+}
+
+.line {
+    height: 1.5px;
+    width: 4rem;
+    background-color: rgb(219, 91, 94);
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+.wrapper-social {
+    width: 100%;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.google,
+.facebook {
+    height: 44px;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    font-size: 14px;
+    font-weight: 300;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.fa-facebook,
+.fa-google {
+    margin-right: 2rem;
+}
+
+.wrapper-info {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.wrapper-email,
+.wrapper-name {
+    width: 50%;
+}
+
+.email,
+.name {
+    width: 100%;
+    border: 1px solid gray;
+    height: 44px;
+    border-radius: 1rem;
+    padding: 1rem;
+}

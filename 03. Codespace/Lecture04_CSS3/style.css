@@ -1,0 +1,154 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.boxes {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(238, 130, 238, 0.5),
+            rgba(0, 0, 255, 0.458)
+        ),
+        url(https://www.minimaldesksetups.com/wp-content/uploads/2022/11/293302129_1066920367364912_1474394010024187611_n-819x1024.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-size: 50px;
+    font-weight: 700;
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+
+/* @supports (background-repeat: no-repeat;) {
+    .boxes {
+        display: none;
+    }
+} */
+
+.dem02 {
+    cursor: pointer;
+    /* display: none; */
+    /* Không chiếm diện tích và không nhấn vào được */
+    /* opacity: 0; */
+    /* Vẫn chiếm diện tích và có thể click vào được */
+    /* visibility: hidden; */
+    /* Vẫn chiếm diện tích nhưng không click vào được */
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20rem;
+}
+#title3 {
+    color: violet;
+}
+
+.dem03 {
+    font-size: 50px;
+    font-weight: 700;
+    color: blue;
+    /* height: 30rem;
+    width: 30rem; */
+    /* background-color: black; */
+    margin: 0 auto;
+    text-shadow: -12px -14px 12px 12px rgba(255, 0, 0, 0.59);
+    /* box-shadow: x y blur w red; */
+}
+
+.dem03 {
+    color: red !important;
+}
+
+div {
+    color: aqua;
+}
+
+/* Độ ưu tiên: tags < class < Đi từ dưới dưới lên < id < inline < !important */
+
+ul {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* li:first-child {
+    color: red;
+} */
+
+/* li:last-child {
+    color: green;
+}
+
+li:nth-child(5) {
+    color: aquamarine;
+}
+
+li:nth-last-child(2) {
+    color: pink;
+} */
+/* 
+li:not(:first-child) {
+    color: yellow;
+}
+li:not(:last-child) {
+    color: gold;
+} */
+
+/* li:nth-child(even) {
+    color: blue;
+}
+li:nth-child(odd) {
+    color: red;
+} */
+
+/* odd: số lẻ - even là số chẵn */
+
+/* li:nth-child(3n + 2) {
+    color: purple;
+} */
+
+/* li:first-of-type {
+    color: red;
+} */
+
+li:first-child p {
+    color: red;
+}
+
+h2 + .titleh3 {
+    color: pink;
+}
+
+p::first-letter {
+    font-size: 50px;
+    color: black;
+}
+
+/* a[href^="www"] {
+    color: red;
+} */
+
+/* a[href$=".com"] {
+    color: brown;
+} */
+
+/* selector nâng cao
+a[href^="www"] -> trỏ đến tất cả các thẻ a có href bắt đầu bằng www
+a[href$=".com"] -> trỏ đến tất cả các thẻ a kết thúc bằng .com
+div[data-title="value" -> thẻ div có chứa data-title là value
+p::first-letter -> chữ cái đầu tiên trong nội dung
+*/
+
+
+/* Flexbox-> Dùng để chia giao diện
+
+display: flex;
+flex-direction:
+
+*/

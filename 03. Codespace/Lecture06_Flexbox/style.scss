@@ -1,0 +1,36 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid orangered;
+    margin: 5rem;
+    transition: color 0.25s linear;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+    cursor: pointer;
+    &:before {
+        content: "";
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: orangered;
+        z-index: -1;
+        transition: width 0.5s linear;
+    }
+    &:hover {
+        color: white;
+        &:before {
+            width: 100%;
+        }
+    }
+}

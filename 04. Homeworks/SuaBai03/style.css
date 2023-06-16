@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left bottom, #f39499, #f39499af);
+    padding-top: 10rem;
+}
+
+.signupForm {
+    height: 573px;
+    width: 582px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 9rem;
+}
+
+.signupForm_header {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.signupForm_header-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signupForm_header-desc {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    text-align: center;
+}
+
+.signin-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #089fe0;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.signupForm_body {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.signupForm_body-username {
+    width: 100%;
+    height: 44px;
+    background-color: #eee;
+    border: none;
+    padding: 2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container-name {
+    text-align: center;
+    
+}
+
+.signupForm_body-firstname {
+    width: 195px;
+    height: 44px;
+    background: #eee;
+    border: none;
+    padding: 2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 7px;
+}
+.signupForm_body-lastname {
+    width: 195px;
+    height: 44px;
+    background: #eee;
+    border: none;
+    padding: 2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.signupForm_body-email {
+    width: 100%;
+    height: 44px;
+    background-color: #eee;
+    border: none;
+    padding: 2rem;
+    font-weight: 300;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.signupForm_body-btn {
+    width: 100%;
+    height: 40px;
+    background-color: #089fe0;
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+}
+
+.signupForm_body-btn:hover {
+    background-color: #089fe0a6;
+}
+
+.signupForm_footer {
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.have-read {
+    font-size: 14px;
+    font-weight: 300;
+}
+.Term {
+    font-size: 14px;
+    font-weight: 300;
+    color: #089fe0;
+}
