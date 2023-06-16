@@ -50,6 +50,37 @@ h2:after{
 
 #### Bài 1: Code divider
 
+```
+<div class="line">
+  <span class="line_text">Header</span>
+</div>
+```
+
+**style.scss**
+```
+.line {
+    margin-top: 20rem;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: orangered;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+    &_text {
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        z-index: 1;
+    }
+}
+```
+
 #### Bài 2: Code nút bấm có hiệu ứng đổ màu:
 
 **index.html**
@@ -90,3 +121,13 @@ button:hover:before {
   width: 100%;
 }
 ```
+
+### 4. Tổng kết
+
+#### Những lý do chúng ta lại sử dụng pseudo before và after
+
+- Giảm số lượng HTML được tạo ra, một phần giúp tăng tốc độ tải trang và cài thiện hiệu suất web
+
+- Dễ dàng quản lý, nếu sử dụng một thẻ HTML khác chẳng hạn như div để thay thế cho before và after thì về mặt lý thuyết ta vẫn có thể làm được nhưng phần CSS sẽ trở nên phức tạp và khó quản lý
+
+- Tóm lại tuỳ trường hợp và ngữ cảnh, làm nhiều sẽ nhận ra lúc nào nên dùng công cụ nào

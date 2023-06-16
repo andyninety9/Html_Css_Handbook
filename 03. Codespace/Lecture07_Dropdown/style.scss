@@ -45,6 +45,19 @@ body {
         visibility: hidden;
         cursor: pointer;
         transition: all 0.25s linear;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 400px;
+            background-color: transparent;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            transform: translateY(-100%);
+        }
     }
     &_item {
         list-style: none;
@@ -58,6 +71,7 @@ body {
         }
         &:hover {
             border-left: 4px solid blue;
+            background-color: #27272726;
         }
     }
     &:hover {
@@ -80,9 +94,10 @@ body {
     right: 0;
     top: 0;
     transform: translate(-20px, -50%);
+    z-index: -1;
 }
 
-.textBefore {
+.line {
     margin-top: 20rem;
     text-align: center;
     position: relative;
@@ -96,13 +111,12 @@ body {
         left: 0;
         top: 50%;
     }
-}
-
-.text {
-    display: inline-block;
-    position: relative;
-    background-color: white;
-    z-index: 1;
+    &_text {
+        display: inline-block;
+        position: relative;
+        background-color: white;
+        z-index: 1;
+    }
 }
 
 .container2 {

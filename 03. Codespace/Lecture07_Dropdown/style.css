@@ -46,6 +46,19 @@ body {
   visibility: hidden;
   cursor: pointer;
   transition: all 0.25s linear;
+  position: relative;
+  z-index: 1;
+}
+.dropdown_list::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 400px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateY(-100%);
 }
 .dropdown_item {
   list-style: none;
@@ -60,6 +73,7 @@ body {
 }
 .dropdown_item:hover {
   border-left: 4px solid blue;
+  background-color: rgba(39, 39, 39, 0.1490196078);
 }
 .dropdown:hover .dropdown_list {
   opacity: 1;
@@ -78,15 +92,16 @@ body {
   right: 0;
   top: 0;
   transform: translate(-20px, -50%);
+  z-index: -1;
 }
 
-.textBefore {
+.line {
   margin-top: 20rem;
   text-align: center;
   position: relative;
   z-index: 0;
 }
-.textBefore:before {
+.line:before {
   content: "";
   width: 100%;
   height: 1px;
@@ -95,8 +110,7 @@ body {
   left: 0;
   top: 50%;
 }
-
-.text {
+.line_text {
   display: inline-block;
   position: relative;
   background-color: white;
