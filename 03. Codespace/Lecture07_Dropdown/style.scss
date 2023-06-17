@@ -67,7 +67,7 @@ body {
         padding-left: 30px;
         border-left: 4px solid white;
         &:not(:last-child) {
-            border-bottom: 2px solid rgba(0, 0, 0, 0.072);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.072);
         }
         &:hover {
             border-left: 4px solid blue;

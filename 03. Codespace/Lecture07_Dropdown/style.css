@@ -69,7 +69,7 @@ body {
   border-left: 4px solid white;
 }
 .dropdown_item:not(:last-child) {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.072);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.072);
 }
 .dropdown_item:hover {
   border-left: 4px solid blue;

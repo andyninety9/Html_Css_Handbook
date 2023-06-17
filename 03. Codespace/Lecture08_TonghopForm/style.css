@@ -96,7 +96,7 @@ body {
   border: 5px solid white;
   top: 50%;
   left: 0;
-  transform: translateY(-50%) scale(0.9);
+  transform: translateY(-50%) scale(0.85);
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
