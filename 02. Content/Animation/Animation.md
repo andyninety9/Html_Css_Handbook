@@ -4,7 +4,7 @@ Animation và một tính năng của CSS cho phép tạo ra các hiệu ứng c
 
 ## Keyframe
 
-    Để sử dụng tính năng animation trong CSS, chúng ta cần định nghĩa các keyframe cho animation. ```keyframe``` là một mốc thời gian cụ thể mà tại thời điểm đó các animation được thực hiện.
+Để sử dụng tính năng animation trong CSS, chúng ta cần định nghĩa các keyframe cho animation. ```keyframe``` là một mốc thời gian cụ thể mà tại thời điểm đó các animation được thực hiện.
 
 #### Syntax
 
@@ -12,12 +12,12 @@ Animation và một tính năng của CSS cho phép tạo ra các hiệu ứng c
 
 ```
 @keyframes nameOfAnimation{
-		from {
-			transform: translateX(0)
-		}
-		to {
-			transform: translateX(20rem)
-		}
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(20rem)
+    }
 }
 ```
 
@@ -25,34 +25,31 @@ Animation và một tính năng của CSS cho phép tạo ra các hiệu ứng c
 
 ##### Cách sử dụng
 
-    ```
-    	animation-name: nameOfAnimation;
-    	animation-duration: 2s;
-    	animation-direction: alternate;
-    	animation-interation-count: 2;
-
-animation-timing-function: kiểu hiệu ứng;
-animation-fill-mode: forward / backwards
-
-````
+```
+    animation-name: nameOfAnimation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-interation-count: 2;
+    animation-timing-function: kiểu hiệu ứng;
+    animation-fill-mode: forward / backwards
+```
 
     Cách sử dụng rút gọn:
 
-
-      ```
-      animation: move 2s forwards infinite alternate cubic-bezier;
-      ```
+```
+animation: move 2s forwards infinite alternate cubic-bezier;
+```
 
 #### Thực hành
 
 ##### 1. Tạo circle loading:
 
-````
+```
 
    <div class="circle-loading"></div>
 ```
 
-```SASS
+```
 .circle-loading{
     margin: 0 auto;
     width: 5rem;
@@ -80,16 +77,16 @@ animation-fill-mode: forward / backwards
 ```
 
 ```
-@keyframes fade{
-    from{
-        transform: scale(1);
-        opacity: 1;
+    @keyframes fade{
+        from{
+            transform: scale(1);
+            opacity: 1;
+        }
+        to{
+            transform: scale(2);
+            opacity: 0;
+        }
     }
-    to{
-        transform: scale(2);
-        opacity: 0;
-    }
-}
 ```
 
 ##### 2. Tạo circle loading 2:
@@ -121,7 +118,6 @@ animation-fill-mode: forward / backwards
         }
     }
 }
-
 
 @keyframes loading {
     50%{

@@ -35,7 +35,7 @@ max-width + ```Kích thước - 1```: nhỏ hơn hoặc bằng
 }
 
 // Thiết lập hiển thị cho màn hình có kích thước màn hình nhỏ hơn 600px
-@media screen and (max-width: 600px){
+@media screen and (max-width: 599px){
 	.container{
 		display: block;
 	}
