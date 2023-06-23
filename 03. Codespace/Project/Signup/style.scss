@@ -12,27 +12,17 @@ body {
 .container {
     @include size(100vw, 100vh);
     @include flex(row, center, center);
-    // height: 100vh;
-    // width: 100vw;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 
 .signin {
-    // width: 556px;
-    // height: 556px;
-    @include size(556px, 556px);
+    @include size(556px, 744px);
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
-    padding: 50px;
+    padding: 50px 60px 50px 60px;
     &_header {
         width: 100%;
         @include flex(column, center, center);
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
         &-title {
             color: $text-color;
             font-weight: 600;
@@ -46,25 +36,22 @@ body {
             margin-bottom: 20px;
         }
         &-google {
-            // width: 100%;
-            // height: 52px;
             @include size(100%, 52px);
             @include flex(row, center, center);
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
+            gap: 10px;
             margin-bottom: 20px;
             border: 1px solid rgba(0, 0, 0, 0.224);
             border-radius: 10px;
+        }
+        &-email {
+            font-size: 14px;
+            color: $text-color2;
+            margin-bottom: 20px;
         }
     }
     &_body {
         width: 100%;
         @include flex(column, center, end);
-        // display: flex;
-        // flex-direction: column;
-        // align-items: center;
-        // justify-content: end;
         &-email,
         &-password {
             display: flex;
@@ -75,8 +62,6 @@ body {
         }
         &-btn {
             @include size(100%, 52px);
-            // height: 52px;
-            // width: 100%;
             background-color: $primary-color;
             border-radius: 10px;
             margin-top: 20px;
@@ -90,8 +75,6 @@ body {
     }
     &_input {
         @include size(100%, 52px);
-        // height: 52px;
-        // width: 100%;
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.271);
         padding: 8px 12px;
@@ -99,14 +82,49 @@ body {
     &_label {
         margin-bottom: 10px;
     }
-    &_forgot-password {
-        @include flex(row, end, center);
-        // display: flex;
-        // align-items: center;
-        // justify-content: end;
+    &_term {
+        @include flex(row, start, start);
+        gap: 5px;
         width: 100%;
-        color: $primary-color;
+        color: $text-color;
+        font-weight: 400;
         font-size: 14px;
+        line-height: 22px;
+        cursor: pointer;
+    }
+    &_checkbox {
+        display: none;
+        &:checked + .signin_checkbox-text::after {
+            opacity: 1;
+            visibility: visible;
+        }
+        &-text {
+            padding-left: 28px;
+            display: block;
+            width: 100%;
+            position: relative;
+            &::before {
+                content: "";
+                @include size(20px, 20px);
+                border: 2px solid $text-color2;
+                position: absolute;
+                border-radius: 3px;
+                top: 0;
+                left: 0;
+            }
+            &::after {
+                content: "";
+                @include size(10px, 15px);
+                left: 0;
+                top: 0;
+                position: absolute;
+                transform: translate(5px, 0) rotate(45deg) scale(0.9);
+                border-bottom: 3px solid $text-color;
+                border-right: 3px solid $text-color;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
     }
 }
 

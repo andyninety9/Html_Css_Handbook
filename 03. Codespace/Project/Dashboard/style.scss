@@ -1,0 +1,84 @@
+@import "../constants/mixin.scss";
+@import "../constants/variables.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+}
+
+.dashboard {
+    @include size(100%, 100%);
+    background-color: $white-color;
+    padding: 40px;
+
+    &_body {
+        @include size(100%, 2000px);
+        display: flex;
+        gap: 40px;
+    }
+    &_sidebar {
+        width: 76px;
+        height: 733px;
+        border: 1px solid black;
+    }
+    &_content {
+        @include size(100%, 733px);
+        border: 1px solid blue;
+    }
+}
+
+.header {
+    @include size(100%, 52px);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    &_logo {
+        @include size(115px, 100%);
+    }
+    &_search {
+        @include size(458px, 100%);
+        margin-left: 50px;
+        position: relative;
+        &-input {
+            @include size(100%, 100%);
+            background: white;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 8px 10px 8px 20px;
+        }
+        &-btn {
+            @include size(82px, 40px);
+            border-radius: 20px;
+            background: $primary-color;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-8px, -50%);
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+    &_container {
+        margin-left: auto;
+        @include flex(row, end, center);
+        gap: 20px;
+    }
+    &_avatar {
+        @include size(52px, 52px);
+        &-image {
+            @include size(100%, 100%);
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+}
+
+.fa-search {
+    color: $white-color;
+}

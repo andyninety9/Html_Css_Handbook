@@ -17,11 +17,11 @@ body {
 
 .signin {
   width: 556px;
-  height: 556px;
+  height: 744px;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
-  padding: 50px;
+  padding: 50px 60px 50px 60px;
 }
 .signin_header {
   width: 100%;
@@ -49,9 +49,15 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, 0.224);
   border-radius: 10px;
+}
+.signin_header-email {
+  font-size: 14px;
+  color: #808191;
+  margin-bottom: 20px;
 }
 .signin_body {
   width: 100%;
@@ -90,14 +96,54 @@ body {
 .signin_label {
   margin-bottom: 10px;
 }
-.signin_forgot-password {
+.signin_term {
   display: flex;
   flex-direction: row;
-  justify-content: end;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
+  gap: 5px;
   width: 100%;
-  color: #1dc071;
+  color: #171725;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.signin_checkbox {
+  display: none;
+}
+.signin_checkbox:checked + .signin_checkbox-text::after {
+  opacity: 1;
+  visibility: visible;
+}
+.signin_checkbox-text {
+  padding-left: 28px;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.signin_checkbox-text::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid #808191;
+  position: absolute;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+.signin_checkbox-text::after {
+  content: "";
+  width: 10px;
+  height: 15px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transform: translate(5px, 0) rotate(45deg) scale(0.9);
+  border-bottom: 3px solid #171725;
+  border-right: 3px solid #171725;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .fa-eye-slash {

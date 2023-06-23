@@ -16,15 +16,15 @@
             referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="../ResetCSS/reset.css" />
-        <title>Sign in</title>
+        <title>Sign up</title>
     </head>
     <body>
         <div class="container">
             <div class="signin">
                 <div class="signin_header">
-                    <div class="signin_header-title">Welcome Back!</div>
+                    <div class="signin_header-title">Sign up</div>
                     <div class="signin_header-subTitle">
-                        Do you have an account? <u>Sign up</u>
+                        Do you have an account? <u>Sign in</u>
                     </div>
                     <div class="signin_header-google">
                         <svg
@@ -48,8 +48,18 @@
                         </svg>
                         Sign in with google
                     </div>
+                    <div class="signin_header-email">Or sign up with email</div>
                 </div>
                 <form class="signin_body">
+                    <div class="signin_body-email">
+                        <label class="signin_label" for="signin_input"
+                            >Full Name</label
+                        >
+                        <input
+                            type="text"
+                            class="signin_input"
+                            placeholder="example@gmail.com" />
+                    </div>
                     <div class="signin_body-email">
                         <label class="signin_label" for="signin_input"
                             >Email</label
@@ -69,8 +79,14 @@
                             placeholder="Enter your password" />
                         <i class="fas fa-eye-slash"></i>
                     </div>
-                    <div class="signin_forgot-password">Forgot password</div>
-                    <button class="signin_body-btn">Sign in</button>
+                    <div class="signin_term">
+                        <input type="checkbox" class="signin_checkbox" />
+                        <label class="signin_checkbox-text">
+                            I agree to the Tearms of Use and have read and
+                            understand the Privacy policy.
+                        </label>
+                    </div>
+                    <button class="signin_body-btn">Create my account</button>
                 </form>
             </div>
         </div>
