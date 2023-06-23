@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-.signin {
+.signup {
   width: 556px;
   height: 744px;
   background-color: white;
@@ -23,26 +23,26 @@ body {
   border-radius: 10px;
   padding: 50px 60px 50px 60px;
 }
-.signin_header {
+.signup_header {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.signin_header-title {
+.signup_header-title {
   color: #171725;
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 20px;
 }
-.signin_header-subTitle {
+.signup_header-subTitle {
   color: #171725;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 20px;
 }
-.signin_header-google {
+.signup_header-google {
   width: 100%;
   height: 52px;
   display: flex;
@@ -54,26 +54,26 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.224);
   border-radius: 10px;
 }
-.signin_header-email {
+.signup_header-email {
   font-size: 14px;
   color: #808191;
   margin-bottom: 20px;
 }
-.signin_body {
+.signup_body {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
 }
-.signin_body-email, .signin_body-password {
+.signup_body-email, .signup_body-password {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 20px;
   position: relative;
 }
-.signin_body-btn {
+.signup_body-btn {
   width: 100%;
   height: 52px;
   background-color: #1dc071;
@@ -82,21 +82,21 @@ body {
   color: white;
   font-weight: 500;
 }
-.signin_body-btn:hover {
+.signup_body-btn:hover {
   background-color: #1dc071;
   opacity: 0.9;
 }
-.signin_input {
+.signup_input {
   width: 100%;
   height: 52px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.271);
   padding: 8px 12px;
 }
-.signin_label {
+.signup_label {
   margin-bottom: 10px;
 }
-.signin_term {
+.signup_term {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -109,20 +109,21 @@ body {
   line-height: 22px;
   cursor: pointer;
 }
-.signin_checkbox {
+.signup_checkbox {
   display: none;
 }
-.signin_checkbox:checked + .signin_checkbox-text::after {
+.signup_checkbox:checked + .signup_checkbox-text::after {
   opacity: 1;
   visibility: visible;
 }
-.signin_checkbox-text {
+.signup_checkbox-text {
+  cursor: pointer;
   padding-left: 28px;
   display: block;
   width: 100%;
   position: relative;
 }
-.signin_checkbox-text::before {
+.signup_checkbox-text::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -132,7 +133,7 @@ body {
   top: 0;
   left: 0;
 }
-.signin_checkbox-text::after {
+.signup_checkbox-text::after {
   content: "";
   width: 10px;
   height: 15px;
@@ -140,10 +141,11 @@ body {
   top: 0;
   position: absolute;
   transform: translate(5px, 0) rotate(45deg) scale(0.9);
-  border-bottom: 3px solid #171725;
-  border-right: 3px solid #171725;
+  border-bottom: 3px solid #1dc071;
+  border-right: 3px solid #1dc071;
   opacity: 0;
   visibility: hidden;
+  transition: all 0.25s linear;
 }
 
 .fa-eye-slash {

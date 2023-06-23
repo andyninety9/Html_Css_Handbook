@@ -14,7 +14,7 @@ body {
     @include flex(row, center, center);
 }
 
-.signin {
+.signup {
     @include size(556px, 744px);
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -94,11 +94,12 @@ body {
     }
     &_checkbox {
         display: none;
-        &:checked + .signin_checkbox-text::after {
+        &:checked + .signup_checkbox-text::after {
             opacity: 1;
             visibility: visible;
         }
         &-text {
+            cursor: pointer;
             padding-left: 28px;
             display: block;
             width: 100%;
@@ -119,10 +120,11 @@ body {
                 top: 0;
                 position: absolute;
                 transform: translate(5px, 0) rotate(45deg) scale(0.9);
-                border-bottom: 3px solid $text-color;
-                border-right: 3px solid $text-color;
+                border-bottom: 3px solid $primary-color;
+                border-right: 3px solid $primary-color;
                 opacity: 0;
                 visibility: hidden;
+                transition: all 0.25s linear;
             }
         }
     }
