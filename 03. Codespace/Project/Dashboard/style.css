@@ -102,21 +102,21 @@
   display: grid;
 }
 
-.top {
+.topSidebar {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
-.top_list {
+.topSidebar_list {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
-.top_list-item {
+.topSidebar_list-item {
   width: 44px;
   height: 44px;
   display: flex;
@@ -125,12 +125,12 @@
   align-items: center;
   margin-bottom: 30px;
 }
-.top_list-item :hover {
+.topSidebar_list-item :hover {
   border-radius: 10px;
   opacity: 0.8;
 }
 
-.bottom {
+.bottomSidebar {
   width: 100%;
   margin-top: auto;
   display: flex;
