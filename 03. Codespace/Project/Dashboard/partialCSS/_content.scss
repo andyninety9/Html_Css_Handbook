@@ -1,0 +1,91 @@
+.content {
+    @include size(100%, 733px);
+    // border: 1px solid blue;
+    grid-column: span 11;
+}
+
+.campaign {
+    width: 100%;
+    @include flex(column, center, center);
+}
+
+.top {
+    @include size(100%, 50px);
+    @include flex(row, start, center);
+    font-weight: 700;
+}
+
+.bottom {
+    width: 100%;
+    @include flex(row, center, center);
+    gap: 30px;
+}
+
+.left {
+    @include size(583px, 266px);
+    &_image {
+        @include size(100%, 100%);
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &_header {
+        @include flex(row, start, center);
+        @include size(100%, 18px);
+        gap: 20px;
+        color: $text-color2;
+        font-size: 14px;
+    }
+    &_body {
+        @include size(100%, 100%);
+        padding-right: 200px;
+        &-title {
+            color: black;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        &-subtitle {
+            color: $text-color2;
+            font-size: 16px;
+            font-weight: lighter;
+            margin-bottom: 24px;
+            line-height: 25px
+        }
+    }
+}
+
+.processBar {
+    @include size(100%, 5px);
+    background-color: #eee;
+    border-radius: 10px;
+    margin-bottom: 24px;
+    &-color {
+        display: block;
+        @include size(70%, 100%);
+        background-color: greenyellow;
+        border-radius: 10px;
+    }
+}
+
+.info {
+    width: 100%;
+    &_list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        &-item {
+            width: 100%;
+            grid-column: span 1;
+            font-size: 24px;
+            @include flex(row, center, center);
+
+        }
+    }
+}

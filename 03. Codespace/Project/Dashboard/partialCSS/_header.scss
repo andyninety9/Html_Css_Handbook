@@ -2,12 +2,16 @@
     @include size(100%, 52px);
     margin-bottom: 30px;
     display: grid;
+    // Sử dụng display grid để tạo layout cho header
+    // Cần nhớ thuộc tính: grid-template-columns khi sử dụng display: grid
+    // display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     &_left {
         height: 52px;
         width: 52px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        // grid-culumn: span 1; sử dụng để quy định số cột mà 1 phần tử chiếm
         grid-column: span 1;
         &-logo {
             @include size(100%, 100%);
@@ -53,6 +57,7 @@
         right: 0;
         top: 50%;
         transform: translate(-8px, -50%);
+        color: $white-color;
         &:hover {
             opacity: 0.9;
         }
