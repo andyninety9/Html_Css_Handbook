@@ -1,0 +1,81 @@
+.header {
+    @include size(100%, 52px);
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    &_left {
+        height: 52px;
+        width: 52px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        grid-column: span 1;
+        &-logo {
+            @include size(100%, 100%);
+            object-fit: cover;
+        }
+    }
+    &_middle {
+        height: 52px;
+        grid-column: span 6;
+    }
+
+    &_right {
+        @include flex(row, end, center);
+        gap: 20px;
+        grid-column: span 5;
+        &-button {
+            @include size(191px, 52px);
+            border-radius: 10px;
+            background-color: $secondary-color;
+            color: $white-color;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+    }
+}
+.search {
+    @include size(458px, 100%);
+    margin-left: 50px;
+    position: relative;
+    &_input {
+        @include size(100%, 100%);
+        background: white;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 8px 10px 8px 20px;
+    }
+    &_btn {
+        @include size(82px, 40px);
+        border-radius: 20px;
+        background: $primary-color;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-8px, -50%);
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
+
+.dropdown {
+    height: 100%;
+    &-select {
+        color: $text-color2;
+        border: none;
+    }
+    &-icon {
+        color: $text-color2;
+    }
+}
+
+.avatar {
+    @include size(52px, 52px);
+    &-image {
+        @include size(100%, 100%);
+        object-fit: cover;
+        border-radius: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
