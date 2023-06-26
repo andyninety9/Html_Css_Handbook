@@ -6,6 +6,8 @@
 @import "../Dashboard/partialCSS/sidebar";
 //ContentCSS
 @import "../Dashboard/partialCSS/content";
+//popularCSS
+@import "../Dashboard/partialCSS/popular";
 
 // Chia nhỏ file css ra bằng sass
 // Tạo foler để chứa các file css nhỏ -> partialCSS -> tạo tiếp file scss với cú pháp "_tên.scss" -> dùng @import để gọi file scss vào file style.scss
@@ -30,3 +32,11 @@ body {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .dashboard {
+        padding: 10px;
+        &_body {
+            display: flex;
+        }
+    }
+}

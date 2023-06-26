@@ -17,6 +17,9 @@
             @include size(100%, 100%);
             object-fit: cover;
         }
+        &-menu {
+            display: none;
+        }
     }
     &_middle {
         height: 52px;
@@ -82,5 +85,66 @@
         object-fit: cover;
         border-radius: 100%;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+//Responsive cho header
+// Có 3 kích cỡ màn hình phổ biến sm(small): 576px - 767px, md(medium): 768px - 991px, lg(large): 992px - trở lên
+// Trong dự án này chỉ sử dụng lg và md
+
+//max-width: nhỏ hơn hoặc bằng
+//min-width: lớn hơn hoặc bằng
+
+// Responive cho khoảng từ 991px trở xuống
+@media screen and (max-width: 991px) {
+    // Ẩn dropdown và button khi màn hình nhỏ hơn 991px
+    .dropdown {
+        display: none;
+    }
+    //Thay đổi kích thước cho search khi màn hình nhỏ hơn 991px
+    .search {
+        @include size(217px, 40px);
+        margin-left: 0px;
+        &_input {
+            font-size: 12px;
+        }
+        &_btn {
+            @include size(42px, 28px);
+        }
+    }
+    .avatar {
+        @include size(40px, 40px);
+    }
+    .header {
+        &_left {
+            box-shadow: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            &-logo {
+                display: none;
+            }
+            &-menu {
+                display: block;
+            }
+        }
+        &_middle {
+            grid-column: span 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        &_right {
+            grid-column: span 1;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            &-button {
+                display: none;
+            }
+        }
     }
 }

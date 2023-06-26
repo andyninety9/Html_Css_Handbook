@@ -32,3 +32,9 @@
     margin-top: auto;
     @include flex(row, center, end);
 }
+
+@media screen and (max-width: 991px) {
+    .sidebar {
+        display: none;
+    }
+}
